@@ -1,0 +1,4 @@
+com\niit\dao\userDao.class
+com\niit\daoimpl\userDaoimpl.class
+com\niit\model\User.class
+com\niit\config\hibernateConfig.class
