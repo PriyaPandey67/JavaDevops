@@ -24,29 +24,8 @@ public class userDaoimpl implements userDao {
 		session.save(u);
 		t.commit();
 		System.out.println("outside save");
-	}
-
-	public User getUserId(int uid) {
-		
-		Session ssn = sessionFactory.openSession(); 
-		 ssn.beginTransaction();
-		  User u = (User) ssn.load(User.class, uid); 
-		  ssn.getTransaction().commit();
-		return u;  
-		 
-	}
-
-	public int update(User uid) {
-		 Session session = sessionFactory.openSession();
-	     session.beginTransaction();
-	     session.saveOrUpdate(uid);
-	 
-	 System.out.println("Updated Successfully");
-	  session.getTransaction().commit();
-	return 0;
 	
-
-	}
+		}
 	
 	}
 
